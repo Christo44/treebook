@@ -1,14 +1,23 @@
+<div class="page-header">
+  <h1><%= @status.name %></h1>
+</div>
+
 <p id="notice"><%= notice %></p>
 
-<p>
+<!-- <p>
   <strong>Name:</strong>
   <%= @status.name %>
-</p>
+</p> -->
+<ul class="statuses">
+  <li>
+    <div class="content">
+      <p><%= @status.content %></p>
+    </div>
 
-<p>
-  <strong>Content:</strong>
-  <%= @status.content %>
-</p>
+    <div class="meta">
+      <%= link_to 'Edit', edit_status_path(@status) %>
+      <%= link_to 'Back', statuses_path %>
+    </div>
+  </li>
 
-<%= link_to 'Edit', edit_status_path(@status) %> |
-<%= link_to 'Back', statuses_path %>
+</ul>
