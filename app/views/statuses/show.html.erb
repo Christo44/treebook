@@ -1,16 +1,13 @@
 <div class="page-header">
-  <h1><%= @status.name %></h1>
+  <h1></h1>
 </div>
 
 <p id="notice"><%= notice %></p>
 
-<!-- <p>
-  <strong>Name:</strong>
-  <%= @status.name %>
-</p> -->
 <ul class="statuses">
   <li>
     <div class="content">
+      <h4><%= @status.user.full_name %></h4>
       <p><%= @status.content %></p>
     </div>
 

@@ -14,10 +14,29 @@
  *= require_self
  */
  body {
-    margin: 10px;
-    padding-top: 48px;
- }
-
+  margin: 10px;
+  padding-top: 48px;
+}
+.container {
+  max-width: 700px;
+}
+#header.nav {
+  max-width: 700px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+}
+.brand {
+  color: #999;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: bold;
+}
 .form-actions {
-    margin-top: 30px;
+  margin-top: 30px;
+}
+form.new_user > div {
+  margin-bottom: 16px;
+}
+form.new_user > div br {
+  height: 0;
 }
