@@ -7,12 +7,14 @@
   <% @statuses.each do |status| %>
   <li>
     <div class="content">
-      <h4><%= @status.user.full_name %></h4>
+      <h4><%= status.user.full_name %></h4>
       <p><%= status.content %></p>
+      <p><%= link_to time_ago_in_words(status.created_at) + " ago", status  %></p>
     </div>
 
 
     <div class="meta">
+
       <%= link_to 'Show', status %>
       <%= link_to 'Edit', edit_status_path(status) %>
       <%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %>

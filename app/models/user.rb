@@ -6,11 +6,12 @@ class User < ActiveRecord::Base
 
   #Setup accessible attributes for your model (protected)
   #attr_accessible :first_name, :last_name, :profile_name
-  
+
   has_many :statuses
-  
+
   #Attr_accessible body
   def full_name
-    first_name + "" + last_name
+    first_name + " " + last_name
   end
+
 end

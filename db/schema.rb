@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20140504214442) do
 
   create_table "statuses", force: true do |t|
+    t.string   "first_name"
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
